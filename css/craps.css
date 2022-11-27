@@ -3,22 +3,22 @@
     flex-direction: column;
     align-items: center;
     padding: 1%;
-    
 }
+
 h1{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 300%;
-    
 }
+
 #images{
     display: flex;
     flex-direction: row;
     width: auto;
     height: auto;
     padding: 1%;
-
 }
+
 #enterBet{
     padding: 1%;
 }
@@ -33,16 +33,20 @@ h1{
 #bet-amount{
     padding: 1%;
 }
+
 #space {
     padding: 1%;
 }
+
 #winStatus {
     padding: 1%;
     font-size: x-large;
 }
+
 #balanceBox{
     font-size: larger;
 }
+
 #balance {
     font-size: larger;
 }

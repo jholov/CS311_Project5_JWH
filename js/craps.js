@@ -26,7 +26,6 @@ function calculate_score()
 {  
     if(allowBet==true)
     {
-
         let firstDie = Math.floor(Math.random()*6)+1;
         let secondDie = Math.floor(Math.random()*6)+1;
         let diceSum = firstDie + secondDie;
@@ -48,7 +47,8 @@ function calculate_score()
         document.getElementById("image2").src ="img/dice"+secondDie+".jpg";
         document.getElementById("image1").alt ="die showing "+firstDie;
         document.getElementById("image2").alt ="die showing "+secondDie;
-            
+        
+        //determines if user won, lost, or sets point
         if(pointSet == false){
 
             switch(diceSum)
@@ -69,13 +69,12 @@ function calculate_score()
                     document.getElementById("balanceBox").innerHTML = bankFormat.format(bankAmount);
                     break;
                     
-                    default:
-                        point = diceSum;
-                        pointSet = true;
-                        document.getElementById("winStatus").innerHTML = "Point is "+point;
-                        break;
-                }
-                
+                default:
+                    point = diceSum;
+                    pointSet = true;
+                    document.getElementById("winStatus").innerHTML = "Point is "+point;
+                    break;
+            }  
         }
         else if(pointSet == true && point == diceSum)
         {
